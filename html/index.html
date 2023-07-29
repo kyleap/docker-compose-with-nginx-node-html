@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Welcome to Kylestudio!</h1>
+<button onclick="getApi()">Get API Data</button>
+
+<script>
+function getApi() {
+  fetch('/api')
+  .then(response => response.text())
+  .then(data => alert(data));
+}
+</script>
+
+</body>
+</html>
